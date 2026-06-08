@@ -1,6 +1,35 @@
+# Python API README
+
 # adct-python
 Application Data Collection Toolkit for Python
 
-- This will shortly provide a python library for creating and posting messages.
+- This is a library-only ADCT python implementation for https://github.com/sandialabs/adct .
+  - It is intended to support standard python types an numpy data types.
+  - Package requirements for development of adct-python are in config/dev-requirements.txt
+  - A single factory class provides interface objects.
+  - Documentation is generated during the build and installed (also soon available at: https://sandialabs.github.io/adct-python/).
 
-- Planned expansions include python-based tools for retrieving and processing data.
+- This optionally depends on libldms from ldms 4.5.2 or later.
+
+## Documentation & Testing
+Development of comprehensive tutorial examples and feature tests is on-going.
+- The current HPC example is examples/mpiSimpleDemo.cpp
+- The primary coverage test is src/adctk/scripts/test\_adctk\_builder.py
+
+Code-based documentation is built with doxygen as part of a normal install.
+
+## Installing from github
+It is recommended that users install this inside a virtual environment ([python](https://docs.python.org/3/library/venv.html), [conda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)).
+
+# Requirements:
+
+Python 3.10 or later is required for use.
+Package requirements for development of adct-python are in config/dev-requirements.txt
+
+## CI System
+Coming soon
+
+## Development Workflows:
+
+Development should be done within a virtual environment of some kind, conda or python.
+There is a script that will run this process: `./dev/build_and_install.sh`

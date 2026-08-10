@@ -284,7 +284,7 @@ class MultiPublisher:
             self._config_from_env(plugins, strict)
             return
         if isinstance(plugins, list):
-            if len(list):
+            if len(plugins):
                 self._config_from_list(plugins, strict)
             else:
                 self._config_from_env("ADC_MULTI_PUBLISHER_NAMES", strict)
